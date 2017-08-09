@@ -1,0 +1,237 @@
+/* -------------------------------------
+CSS reset
+Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+    /*reset Firefox user agent styles*/
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-before: 0px;
+    -moz-padding-after: 0px;
+    -moz-padding-start: 0px;
+    -moz-padding-end: 0px;
+    /*reset Internet Explorer user agent styles*/
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-before: 0px;
+    -ms-padding-after: 0px;
+    -ms-padding-start: 0px;
+    -ms-padding-end: 0px;
+    /*reset Opera user agent styles*/
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-before: 0px;
+    -o-padding-after: 0px;
+    -o-padding-start: 0px;
+    -o-padding-end: 0px;
+    /*    delete on submission*/
+    /*    border: 1px solid black;*/
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    text-align: center;
+    background: url("Alice_Ramsey_ggbain.03065.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+header {
+    color: white;
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+/*    font-family: 'Euphoria Script', cursive;*/
+
+    font-size: 39px;
+    border-bottom: 3px solid gold;
+/*    background-color: darkslategray;*/
+}
+
+header img {
+    height: 100px;
+    margin-top: 10px;
+    border: 5px solid grey;
+    padding: 5px;
+}
+
+.intro {
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    width: 50%;
+    /* height: 400px; */
+    border-radius: 3%;
+    opacity: .85;
+    /* background-color: cadetblue; */
+    font-size: 20px;
+    margin: 1rem auto;
+    color: gold;
+    text-align: center;
+    padding: 2rem;
+    /* padding-top: 45px; */
+    /* border-bottom: 1px solid gold; */
+    text-shadow: 1px 1px 5px #222
+}
+
+body .intro h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+body .intro p {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+body .intro .start-button {
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    background-color: darkslategray;
+}
+
+body .quiz,
+body .results  {
+    font-family: 'Special Elite', cursive;
+    margin-top: 1rem;
+    padding: 15px;
+    width: 50%;
+    margin: 15px auto;
+    background-color: cadetblue;
+    color: white;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 1rem;
+    opacity: .85;
+}
+
+.quiz .answers-wrapper {
+    text-align: left;
+    width: 80%;
+    margin: 0.5rem auto;
+}
+
+.quiz .answers-wrapper .column {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 88%;
+    vertical-align: top;
+}
+
+.quiz .answers-wrapper .column-radio {
+    width: 10%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.quiz .question {
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+body .quiz label {
+    font-size: 29px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+body .quiz input,
+body .quiz select {
+    display: block;
+}
+
+body .quiz input[type="radio"],
+body .quiz input[type="radio"]+label {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px
+}
+
+.quiz .current-question {
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 2px solid gold;
+}
+
+.results {
+    border-bottom: 1px solid gold;
+    border-right: 1px solid gold;
+}
+
+.results .results-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.results .results-question,
+.results .results-answer {
+    text-align: left;
+}
+
+.results .results-question {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.results .results-answer {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
