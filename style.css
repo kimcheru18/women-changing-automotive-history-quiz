@@ -69,65 +69,66 @@ Header styles (Main Module)
 */
 
 header {
-    color: white;
     width: 100%;
     font-family: 'Pacifico', cursive;
-/*    font-family: 'Euphoria Script', cursive;*/
-
-    font-size: 39px;
     border-bottom: 3px solid gold;
-/*    background-color: darkslategray;*/
+    background-color: darkslategray;
+    margin-bottom: 300px;
 }
 
-header img {
+header .heading {
+    color: white;
+    font-size: 2.5rem;
+}
+
+header .old-car {
     height: 100px;
     margin-top: 10px;
     border: 5px solid grey;
     padding: 5px;
 }
 
-.intro {
+.intro h2,
+.intro p {
     position: relative;
     font-family: 'Pacifico', cursive;
     width: 50%;
-    /* height: 400px; */
     border-radius: 3%;
     opacity: .85;
-    /* background-color: cadetblue; */
-    font-size: 20px;
+    font-size: 1rem;
     margin: 1rem auto;
     color: gold;
     text-align: center;
-    padding: 2rem;
-    /* padding-top: 45px; */
-    /* border-bottom: 1px solid gold; */
+    padding: .5rem;
     text-shadow: 1px 1px 5px #222
 }
 
-body .intro h2 {
-    font-size: 42px;
+.intro h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-body .intro p {
-    font-size: 30px;
+.intro p {
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
-body .intro .start-button {
+.start-button {
     font-family: 'Special Elite', cursive;
     color: white;
-    font-size: 30px;
+    font-size: 1.50rem;
     width: 150px;
     padding: 10px;
     cursor: pointer;
     border: 1px solid grey;
     border-radius: 0.5rem;
     background-color: darkslategray;
+    border-bottom: 1px solid gold;
+    border-right: 1px solid gold;
 }
 
-body .quiz,
-body .results  {
+.quiz,
+.results-section {
     font-family: 'Special Elite', cursive;
     margin-top: 1rem;
     padding: 15px;
@@ -163,12 +164,12 @@ body .results  {
 }
 
 .quiz .question {
-    font-size: 29px;
+    font-size: 1.75rem;
     margin-bottom: 30px;
 }
 
 body .quiz label {
-    font-size: 29px;
+    font-size: 1.5rem;
     display: block;
     margin-bottom: 20px;
 }
@@ -186,33 +187,43 @@ body .quiz input[type="radio"]+label {
 }
 
 .quiz .current-question {
-    font-size: 25px;
+    font-size: 1.75rem;
     padding-top: 15px;
     padding-bottom: 15px;
     border-top: 2px solid gold;
 }
 
-.results {
+.results-section .final-score {
+    font-size: 1.75rem;
+    /*    margin-bottom: 15px;*/
+}
+
+.results-section #final-score {
+    margin-bottom: 15px;
+}
+
+.results-section {
     border-bottom: 1px solid gold;
     border-right: 1px solid gold;
 }
 
-.results .results-title {
-    font-size: 35px;
+.results-section .results-title {
+    font-size: 2.25rem;
     margin-bottom: 20px;
 }
-.results .results-question,
-.results .results-answer {
+
+.results-section .results-question,
+.results-section .results-answer {
     text-align: left;
 }
 
-.results .results-question {
-    font-size: 24px;
+.results-section .results-question {
+    font-size: 1.65rem;
     margin-bottom: 10px;
 }
 
-.results .results-answer {
-    font-size: 20px;
+.results-section .results-answer {
+    font-size: 1.35rem;
     margin-bottom: 30px;
 }
 
