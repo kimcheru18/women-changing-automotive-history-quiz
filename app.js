@@ -163,7 +163,7 @@ $(document).ready(function () {
 
 
     // click on the try again button will start a new cycle
-    $('.results').on('click', '.try-again', function () {
+    $('.results-section').on('click', '.try-again', function () {
         $('.intro').show();
         $('.quiz').hide();
         $('.results-section').hide();
