@@ -57,9 +57,20 @@ General styles (General Module, wrapping around the modules below)
 */
 
 body {
-    text-align: center;
-    background: url("Alice_Ramsey_ggbain.03065.jpg") no-repeat fixed;
+    /*    text-align: center;*/
+    background: url("Alice_Ramsey_ggbain.03065.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
+    /*    border-top: 10px solid gold;*/
+    /*border-top-style: inset;*/
+}
+
+body header,
+body .start-button,
+body .try-again {
+    text-align: center;
+    align-content: center;
 }
 
 
@@ -71,22 +82,31 @@ Header styles (Main Module)
 header {
     width: 100%;
     font-family: 'Pacifico', cursive;
-    border-bottom: 3px solid gold;
-    background-color: darkslategray;
-    margin-bottom: 300px;
+    text-decoration: underline;
+    text-decoration-color: gold;
+    /*    border-bottom: 3px solid gold;*/
+    /*        background-color: darkslategray;*/
+    margin-bottom: 200px;
 }
 
 header .heading {
-    color: white;
-    font-size: 2.5rem;
+    color: darkslategrey;
+    font-size: 3rem;
 }
 
 header .old-car {
     height: 100px;
     margin-top: 10px;
-    border: 5px solid grey;
+    border: 5px solid darkslategrey;
     padding: 5px;
+    /*    background-color: gold;*/
 }
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
 
 .intro h2,
 .intro p {
@@ -104,7 +124,7 @@ header .old-car {
 }
 
 .intro h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -115,6 +135,9 @@ header .old-car {
 
 .start-button,
 .try-again {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Special Elite', cursive;
     color: white;
     font-size: 1.50rem;
@@ -192,6 +215,7 @@ body .quiz input[type="radio"]+label {
 }
 
 .quiz .current-question {
+    text-align: center;
     font-size: 1.75rem;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -199,8 +223,8 @@ body .quiz input[type="radio"]+label {
 }
 
 .results-section .final-score {
+    text-align: center;
     font-size: 1.75rem;
-    /*    margin-bottom: 15px;*/
 }
 
 .results-section #final-score {
@@ -234,16 +258,19 @@ body .quiz input[type="radio"]+label {
 
 
 /* -------------------------------------
-Content styles (Main Module)
-(all the styles inside the < sections > or < aside > tags)
-
-
-
-/* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
+footer {
+    text-align: center;
+}
 
+footer p {
+font-size: 2rem;
+    color: gold;
+    margin-top: 100px;
+
+}
 
 /* -------------------------------------
 place all the desktop styles above this line
@@ -251,3 +278,15 @@ Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 place all the mobile tables styles bellow this line
 */
+
+@media only screen and (max-width: 800px) {
+    header .heading {
+        font-size: 2rem;
+    }
+    .intro h2 {
+        font-size: 1.75rem;
+    }
+    .intro p {
+        font-size: 1.5rem;
+    }
+}

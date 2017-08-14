@@ -86,7 +86,7 @@ var questionsArray = [
         questionText: 'In 1888, after a long family road trip and some difficulty with the brakes, what woman was inspired to design brake pads?',
         questionChoices: ['Bertha Benz, who was Karl Benz\'s wife and business partner.', 'After a terrible accident, Denise McCluggage went to work designing brake pads.', 'Charlotte Bridgwood who was also the mother of Florence Lawrence.', 'Brake pads were invented by Janice Briggs.'],
         questionCorrectChoice: 0,
-        correctDetails: '\"Karl Benz invented the automobile but his wife Bertha Benz undertook the long journey from Mannheim to Pforzheim to show the world what the automobiel could do.\"'
+        correctDetails: '\"Karl Benz invented the automobile but his wife Bertha Benz undertook the long journey from Mannheim to Pforzheim to show the world what the automobile could do.\"'
     }
 ];
 
