@@ -131,6 +131,7 @@ $(document).ready(function () {
     $('.start-button').click(function () {
         $('.results-section').hide();
         $('.intro').hide();
+        $('.main-site-image').hide();
         $('.quiz').show();
         $('.answers-wrapper').empty();
         displayQuestion();

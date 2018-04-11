@@ -5,78 +5,94 @@
     <meta charset="UTF-8">
     <title>Women changing automotive history</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header role="banner">
-        <img class="old-car" src="great-arrow-touring-car-clipart-etc-633933.gif" alt="Sketch of old antique car">
-        <h1 class="heading">Women Changing Automotive History</h1>
-    </header>
-
-    <section class="intro">
-        <h2>At the Forefront</h2>
-        <p>Through many challenges, <br>women have become leaders and innovators.</p>
-        <p>Test your knowledge on these inspirational women.</p>
-        <button class="start-button">Start</button>
-    </section>
-    <section class="quiz">
-
-        <h3 class="question">In 1903, Mary Anderson patents which automobile device?</h3>
-        <div class="answers-wrapper">
-
-            <div class="column column-radio">
-                <input type="radio" class="option" name="option">
-            </div>
-            <div class="column">
-                <label for="answer1">The glove compartment</label>
+    <main id="main-container">
+        <header role="banner" id="header-container">
+            <div id="title">
+                <h1 class="heading">Women Changing Automotive History</h1>
             </div>
 
+            <div class="main-site-image">
+            </div>
+        </header>
 
-            <div class="column column-radio"><input type="radio" class="option" name="option"></div>
-            <div class="column"><label for="answer2">Rearview mirror</label></div>
+        <div id="quiz-container">
+            <section class="intro">
+                <h2>At the forefront</h2>
+                <p>Through many challenges, <br>women have become leaders and innovators.</p>
+                <p>Test your knowledge on these inspirational women.</p>
+                <button class="start-button">Start</button>
+            </section>
 
 
-            <div class="column column-radio"><input type="radio" class="option" name="option"></div>
-            <div class="column"><label for="answer3">The windshield wiper</label></div>
+            <section class="quiz">
+                <div class="question-wrapper">
+                    <h3 class="question">In 1903, Mary Anderson patents which automobile device?</h3>
+                    <div class="answers-wrapper">
+
+                        <div class="column column-radio">
+                            <input type="radio" class="option" name="option">
+                        </div>
+                        <div class="column">
+                            <label for="answer1">The glove compartment</label>
+                        </div>
 
 
-            <div class="column column-radio"><input type="radio" class="option" name="option"></div>
-            <div class="column"><label for="answer4">Brake pads</label></div>
+                        <div class="column column-radio"><input type="radio" class="option" name="option"></div>
+                        <div class="column"><label for="answer2">Rearview mirror</label></div>
 
+
+                        <div class="column column-radio"><input type="radio" class="option" name="option"></div>
+                        <div class="column"><label for="answer3">The windshield wiper</label></div>
+
+
+                        <div class="column column-radio"><input type="radio" class="option" name="option"></div>
+                        <div class="column"><label for="answer4">Brake pads</label></div>
+
+                    </div>
+                    <h2 class="current-question">Question 1/10</h2>
+                </div>
+
+            </section>
+
+
+            <section class="results-section">
+                <h2 class="final-score">Your Results!</h2>
+                <h3 class="final-score" id="final-score">1/10</h3>
+
+                <div id="quiz-answers"></div>
+
+                <button class="try-again">Try Again</button>
+                <section class="reference-section">
+                    <h5>Reference List</h5>
+                    <p>History-http://www.history.com/this-day-in-history/mary-anderson-patents-windshield-wiper</p>
+                    <p>Historic HVA Vehicle Assoc. - https://www.historicvehicle.org/florence-lawrence-automotive-inventor-worlds-first-movie-star/</p>
+                    <p>Lauren wants to know - http://www.laurenwantstoknow.com/2015/10/wilma-k-russeys-taxi/</p>
+                    <p>Make a Wish - https://www.wheelsforwishes.org/news/9-times-women-changed-the-automobile-industry/</p>
+                    <p>Smithsonian - http://www.smithsonianmag.comWhat/history/alice-ramseys-historic-cross-country-drive-29114570/</p>
+                    <p>Timeline - https://timeline.com/helene-rother-64363eb9f8aa</p>
+                    <p>Encyclopedia - http://www.encyclopedia.com/people/sports-and-games/sports-biographies/shirley-muldowney</p>
+                    <p>GGBailey - https://blog.ggbailey.com/6-women-inventors-pioneers-of-the-automotive-industry</p>
+                    <p>Mercedes-Benz - https://www.mercedes-benz.com/en/mercedes-benz/classic/bertha-benz/</p>
+                </section>
+            </section>
         </div>
-        <h2 class="current-question">Question 1/10</h2>
 
-    </section>
-    <section class="results-section">
-        <h2 class="final-score">Your Results!</h2>
-        <h3 class="final-score" id="final-score">1/10</h3>
+        <footer role="content-info">
+            <p>© Kimberly Rae</p>
+            <p>
+                <a href="https://www.linkedin.com/in/kimberly-kearney" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/kimcheru18/world-religions-quiz" target="_blank">Github</a>
+            </p>
+        </footer>
 
-        <div id="quiz-answers"></div>
-
-        <button class="try-again">Try Again</button>
-        <section class="reference-section">
-            <h5>Reference List</h5>
-            <p>History-http://www.history.com/this-day-in-history/mary-anderson-patents-windshield-wiper</p>
-            <p>Historic HVA Vehicle Assoc. - https://www.historicvehicle.org/florence-lawrence-automotive-inventor-worlds-first-movie-star/</p>
-            <p>Lauren wants to know - http://www.laurenwantstoknow.com/2015/10/wilma-k-russeys-taxi/</p>
-            <p>Make a Wish - https://www.wheelsforwishes.org/news/9-times-women-changed-the-automobile-industry/</p>
-            <p>Smithsonian - http://www.smithsonianmag.comWhat/history/alice-ramseys-historic-cross-country-drive-29114570/</p>
-            <p>Timeline - https://timeline.com/helene-rother-64363eb9f8aa</p>
-            <p>Encyclopedia - http://www.encyclopedia.com/people/sports-and-games/sports-biographies/shirley-muldowney</p>
-            <p>GGBailey - https://blog.ggbailey.com/6-women-inventors-pioneers-of-the-automotive-industry</p>
-            <p>Mercedes-Benz - https://www.mercedes-benz.com/en/mercedes-benz/classic/bertha-benz/</p>
-        </section>
-    </section>
-    <footer role="content-info">
-        <p>© Kimberly Rae</p>
-        <p>
-            <a href="https://www.linkedin.com/in/kimberly-kearney" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/kimcheru18/world-religions-quiz" target="_blank">Github</a>
-        </p>
-    </footer>
-    <script src="//code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+        <script src="//code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </main>
 </body>
 
 </html>
