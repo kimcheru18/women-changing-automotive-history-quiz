@@ -57,7 +57,6 @@ General styles (General Module, wrapping around the modules below)
 */
 
 body {
-    background-color: #e5dcc3;
     text-align: center;
 }
 
@@ -90,7 +89,7 @@ Header styles (Main Module)
 */
 
 header {
-    background-color: #e5eaea;
+    background-color: #d4dee6;
 }
 
 header .heading {
@@ -124,7 +123,6 @@ Content styles (Main Module)
 .start-button,
 .try-again {
     padding: .25rem 1.25rem;
-    margin-top: 2rem;
     font-family: "Kelson Sans", sans-serif;
     color: #281e1a;
     font-size: 1.25rem;
@@ -134,29 +132,37 @@ Content styles (Main Module)
     box-shadow: 3px 1px 5px grey;
 }
 
+.start-button {
+    margin-top: 2rem;
+}
+
+
+/* *****styles for quiz section***** */
 .quiz,
 .results-section {
     padding: 15px;
-    background-color: #281e1a;
-    color: white;
+    color: #281e1a;
 }
 
-.question-wrapper {
-    width: 85%;
+.question-wrapper,
+.quiz .answers-wrapper,
+.results-section .results-question,
+.results-section .results-answer,
+.reference-section p {
     text-align: left;
-    margin: 0 auto;
-    padding-bottom: 1rem;
 }
 
+.question-wrapper,
 .quiz .answers-wrapper {
-    text-align: left;
     width: 85%;
     margin: 0.5rem auto;
 }
 
+.question-wrapper {
+    margin: 0 auto;
+}
+
 .quiz .answers-wrapper .column {
-    margin: 0;
-    padding: 0;
     display: inline-block;
     width: 88%;
     vertical-align: top;
@@ -165,55 +171,45 @@ Content styles (Main Module)
 .quiz .answers-wrapper .column-radio {
     width: 10%;
     text-align: center;
-    padding-top: 5px;
+    padding-top: .65rem;
 }
 
-body .quiz label {
+.quiz label,
+.quiz input {
     display: block;
+}
+
+.quiz label {
     letter-spacing: 1px;
     padding: .5rem 0;
 }
 
-body .quiz input,
-body .quiz select {
-    display: block;
-}
-
-body .quiz input[type="radio"],
-body .quiz input[type="radio"] + label {
+.quiz input[type="radio"],
+.quiz input[type="radio"] + label {
     display: inline-block;
     width: auto;
     margin-right: .5rem;
-    vertical-align: bottom;
 }
 
 .column-radio {
-    transform: scale(1.65);
+    transform: scale(1.25);
 }
 
 .quiz .current-question {
-    text-align: center;
     padding-top: 15px;
-    padding-bottom: 15px;
     border-top: 2px solid #c59344;
 }
 
-.results-section .final-score {
-    text-align: center;
-}
 
+/* *****styles for results section***** */
 .results-section #final-score {
-    margin-bottom: 15px;
-}
-
-.results-section .results-title {
-    font-size: 2.25rem;
-    margin-bottom: 20px;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
 }
 
 .results-section .results-question,
 .results-section .results-answer {
-    text-align: left;
+    letter-spacing: .5px;
 }
 
 .results-section .results-question {
@@ -222,33 +218,22 @@ body .quiz input[type="radio"] + label {
 
 .results-section .results-answer {
     margin-bottom: 30px;
-    letter-spacing: .5px;
+    font-size: .9rem;
 }
 
+
+/* *****styles for reference section***** */
 .reference-section {
-    text-align: center;
-    margin-top: 25px;
-}
-
-.reference-section h5 {
-    font-size: 1.5rem;
-    margin-bottom: 15px
+    margin-top: 1.75rem;
+    padding-bottom: 5rem;
 }
 
 .reference-section p {
-    text-align: left;
     font-size: 1rem;
     margin-bottom: 5px;
     word-wrap: break-word;
 }
 
-
-#main-container {
-    position: relative;
-    min-height: 100%;
-}
-
-/* *****styles for reference section***** */
 #reference-title {
     padding-bottom: 1rem;
 }
@@ -261,17 +246,12 @@ Footer styles (Main Module)
 */
 
 footer {
-/*        font-family: "Kelson Sans", sans-serif;*/
-    /*    height: 10px;*/
-    /*    margin: 2rem;*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-    /*    padding-bottom: .5rem;*/
+    background-color: #d4dee6;
 }
 
 footer p,
 footer a:hover {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #a1212c;
     font-weight: bold;
 }
@@ -280,21 +260,15 @@ footer a {
     color: #281e1a;
 }
 
-
-footer,
-#contact-info-ul {
-    /*    text-align: center;*/
-}
-
 #app-author,
 #contact-info-ul,
 .contact-info {
     display: inline-block;
-    padding: .5rem;
+    padding: .25rem;
 }
 
 #contact-info-ul {
-    /*    vertical-align: middle;*/
+        vertical-align: middle;
 }
 
 
@@ -325,9 +299,11 @@ place all the mobile tables styles bellow this line
 
     #quiz-container {
 /*        margin: 0 auto;*/
+        background-color: #e5dcc3;
     }
 
-    .quiz {
+    .quiz,
+    .results-section {
 /*        width: 60%;*/
 /*        margin: 3rem auto;*/
     }
@@ -374,7 +350,7 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 320px) {
     body {
-        color: purple;
+/*        color: purple;*/
     }
 }
 
@@ -383,11 +359,11 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 480px) {
     body {
-        color: green;
+/*        color: green;*/
     }
 
     .main-site-image {
-        float: right:
+/*        float: right:*/
     }
 }
 
@@ -396,7 +372,7 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 768px) {
     body {
-        color: red;
+/*        color: red;*/
     }
 }
 
@@ -405,6 +381,6 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 1024px) {
     body {
-        color: blue;
+/*        color: blue;*/
     }
 }
