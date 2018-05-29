@@ -225,7 +225,6 @@ Content styles (Main Module)
 /* *****styles for reference section***** */
 .reference-section {
     margin-top: 1.75rem;
-    padding-bottom: 5rem;
 }
 
 .reference-section p {
@@ -299,7 +298,7 @@ place all the mobile tables styles bellow this line
 
     #quiz-container {
 /*        margin: 0 auto;*/
-        background-color: #e5dcc3;
+/*        background-color: #e5dcc3;*/
     }
 
     .quiz,
@@ -362,8 +361,37 @@ place all the mobile tables styles bellow this line
 /*        color: green;*/
     }
 
+    header {
+        height: 320px;
+    }
+
+    header #title {
+        text-align: left;
+        padding-top: 3rem;
+    }
+
+    header #title,
     .main-site-image {
-/*        float: right:*/
+        display: inline-block;
+        width: 40%;
+    }
+
+    header #title{
+        width: 30%;
+    }
+
+    .main-site-image {
+        width: 60%;
+    }
+
+    header .heading {
+        font-size: 1.5rem;
+    }
+
+    .main-site-image {
+        background-size: cover;
+        vertical-align: middle;
+        float: right;
     }
 }
 
@@ -373,6 +401,15 @@ place all the mobile tables styles bellow this line
 @media only screen and (min-width: 768px) {
     body {
 /*        color: red;*/
+    }
+
+    header #title,
+    .main-site-image {
+        width: 45%;
+    }
+
+    header .heading {
+        font-size: 2.5rem;
     }
 }
 
