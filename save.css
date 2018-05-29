@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+footer {
+/*    font-family: "Kelson Sans", sans-serif;*/
+/*    height: 10px;*/
+/*    margin: 2rem;*/
+position: fixed;
+bottom: 0;
+/*    padding-bottom: .5rem;*/
+}
+
+footer p,
+footer a:hover {
+font-size: 1.1rem;
+color: #a1212c;
+font-weight: bold;
+}
+
+footer a {
+color: #281e1a;
+}
+
+
+footer,
+#contact-info-ul {
+/*    text-align: center;*/
+}
+
+#app-author,
+#contact-info-ul,
+.contact-info {
+display: inline-block;
+padding: .5rem;
+}
+
+#contact-info-ul {
+/*    vertical-align: middle;*/
+}

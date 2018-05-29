@@ -144,7 +144,7 @@ $(document).ready(function () {
             totalNumberofCorrectAnswers++;
         }
         $('#quiz-answers').append("<h4 class='results-question'>Q: " + questionsArray[currentQuestionNumber].questionText + "</h4>");
-        $('#quiz-answers').append("<h5 class='results-answer'>A: " + questionsArray[currentQuestionNumber].correctDetails + "</h5>");
+        $('#quiz-answers').append("<h4 class='results-answer'>A: " + questionsArray[currentQuestionNumber].correctDetails + "</h4>");
 
         // if the question on the screen the last question display the results container (the total score and all the answers details)
         //        console.log(totalNumberofCorrectAnswers);
