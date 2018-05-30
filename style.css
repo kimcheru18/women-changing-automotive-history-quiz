@@ -246,6 +246,7 @@ Footer styles (Main Module)
 
 footer {
     background-color: #d4dee6;
+    padding: 1rem;
 }
 
 footer p,
@@ -278,91 +279,67 @@ Responsive styles
 place all the mobile tables styles bellow this line
 */
 
-@media only screen and (min-width: 1000px) {
-    #header-container {
-/*        position: relative;*/
-/*        padding-top: 2.5rem;*/
-/*        width: 100%;*/
-/*        height: 600px;*/
-/*        margin: 0 auto;*/
-/*        background-color: #e5eaea;*/
-/*        z-index: -1*/
-        /*        border: 1px solid black;*/
-    }
-
-    #header-container,
-    #quiz-container {
-/*        display: block;*/
-        /*        border: 1px solid black;*/
-    }
-
-    #quiz-container {
-/*        margin: 0 auto;*/
-/*        background-color: #e5dcc3;*/
-    }
-
-    .quiz,
-    .results-section {
-/*        width: 60%;*/
-/*        margin: 3rem auto;*/
-    }
-
-    #header-container div {
-/*        display: inline-block;*/
-/*        width: 50%;*/
-    }
-
-    #title h1 {
-/*        font-size: 6rem;*/
-/*        margin-left: 6rem;*/
-/*        text-align: left;*/
-/*        text-shadow: 1px 1px 13px white;*/
-    }
-
-    .main-site-image {
-/*        position: absolute;*/
-/*        height: 500px;*/
-/*        z-index: -1;*/
-    }
-
-    .quiz,
-    .results-section {
-/*        width: 60%;*/
-/*        margin: 0 auto;*/
-/*        padding: 15px;*/
-/*        background-color: #281e1a;*/
-/*        color: white;*/
-/*        border-radius: 5px;*/
-    }
-
-    .intro h2 {
-/*        font-size: 1.75rem;*/
-    }
-    .intro p {
-/*        font-size: 1.5rem;*/
-    }
-}
-
-
-
 /*iPhone portrait*/
 
 @media only screen and (min-width: 320px) {
-    body {
-/*        color: purple;*/
-    }
 }
 
 
 /*iPhone landscape*/
 
 @media only screen and (min-width: 480px) {
-    body {
-/*        color: green;*/
+    .main-site-image {
+        height: 28rem
+    }
+
+    .intro h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro p,
+    .start-button,
+    .try-again {
+        font-size: 1.75rem;
+    }
+
+    .question-wrapper h3,
+    .current-question {
+        font-size: 1.5rem;
+    }
+
+    label, h4 {
+        font-size: 1.3rem;
+    }
+
+    .column-radio {
+        transform: scale(1.75);
+    }
+
+    .column {
+        padding-top: .3rem;
+    }
+
+    footer p,
+    footer a {
+        font-size: 1.25rem;
+    }
+}
+
+
+/*ipad potrait*/
+
+@media only screen and (min-width: 768px) {
+    header #title,
+    .main-site-image {
+        width: 45%;
+    }
+
+    header .heading {
+        font-size: 1.75rem;
     }
 
     header {
-        height: 320px;
+        height: 24rem;
     }
 
     header #title {
@@ -389,35 +366,30 @@ place all the mobile tables styles bellow this line
     }
 
     .main-site-image {
-        background-size: cover;
+        height: 20rem;
+        background-size: contain;
+        margin: 2rem 0;
         vertical-align: middle;
         float: right;
     }
-}
 
-
-/*ipad potrait*/
-
-@media only screen and (min-width: 768px) {
-    body {
-/*        color: red;*/
-    }
-
-    header #title,
-    .main-site-image {
-        width: 45%;
-    }
-
-    header .heading {
-        font-size: 2.5rem;
-    }
 }
 
 
 /*ipad lanscape / small laptop*/
 
 @media only screen and (min-width: 1024px) {
-    body {
-/*        color: blue;*/
+
+    header {
+        height: 33rem;
+    }
+
+    header .heading {
+        font-size: 3rem;
+    }
+
+    .main-site-image {
+        height: 29rem;
+        background-size: contain;
     }
 }
