@@ -60,10 +60,19 @@ body {
     text-align: center;
 }
 
-.max-content-width {
+.max-content-width,
+.header-max-content-width {
     width: 95%;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.max-content-width {
+    width: 95%;
+}
+
+.header-max-content-width {
+    width: 100%;
 }
 
 h2 {
@@ -94,8 +103,8 @@ header {
 
 header .heading {
     color: #281e1a;
-    font-size: 1.75rem;
-    padding: 1rem 0;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .main-site-image {
@@ -288,6 +297,10 @@ place all the mobile tables styles bellow this line
 /*iPhone landscape*/
 
 @media only screen and (min-width: 480px) {
+    header .heading {
+        padding: 1rem 0;
+    }
+
     .main-site-image {
         height: 28rem
     }
@@ -298,16 +311,19 @@ place all the mobile tables styles bellow this line
 
     .intro p,
     .start-button,
-    .try-again {
+    .try-again,
+    .results-section h3,
+    #reference-title h4 {
         font-size: 1.75rem;
     }
 
     .question-wrapper h3,
-    .current-question {
+    .current-question,
+    h4 {
         font-size: 1.5rem;
     }
 
-    label, h4 {
+    label {
         font-size: 1.3rem;
     }
 
@@ -319,8 +335,11 @@ place all the mobile tables styles bellow this line
         padding-top: .3rem;
     }
 
+    .results-section .results-answer,
+    #reference-content p,
     footer p,
-    footer a {
+    footer a,
+    footer a:hover {
         font-size: 1.25rem;
     }
 }
@@ -329,13 +348,14 @@ place all the mobile tables styles bellow this line
 /*ipad potrait*/
 
 @media only screen and (min-width: 768px) {
+    .header-max-content-width {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     header #title,
     .main-site-image {
         width: 45%;
-    }
-
-    header .heading {
-        font-size: 1.75rem;
     }
 
     header {
@@ -354,25 +374,60 @@ place all the mobile tables styles bellow this line
     }
 
     header #title{
-        width: 30%;
+        width: 49%;
     }
 
     .main-site-image {
-        width: 60%;
-    }
-
-    header .heading {
-        font-size: 1.5rem;
+        width: 49%;
     }
 
     .main-site-image {
         height: 20rem;
-        background-size: contain;
         margin: 2rem 0;
         vertical-align: middle;
         float: right;
     }
 
+    .question-wrapper h3 {
+        font-size: 2.25rem;
+    }
+
+    label {
+        font-size: 2rem;
+    }
+
+    .results-section {
+        font-size: 1.75rem;
+    }
+
+
+    .intro p,
+    .results-section h3,
+    #reference-title h4 {
+        font-size: 2rem;
+    }
+
+    .start-button,
+    .try-again {
+        font-size: 2rem;
+        padding: .5rem 2rem
+    }
+
+    .question-wrapper h3,
+    .current-question,
+    h4 {
+        font-size: 1.75rem;
+    }
+    .results-section .results-answer,
+    #reference-content p {
+        font-size: 1.5rem;
+    }
+
+    footer p,
+    footer a
+    footer a:hover {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -390,6 +445,5 @@ place all the mobile tables styles bellow this line
 
     .main-site-image {
         height: 29rem;
-        background-size: contain;
     }
 }
