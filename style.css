@@ -58,6 +58,7 @@ General styles (General Module, wrapping around the modules below)
 
 body {
     text-align: center;
+    background-color: #d4dee6;
 }
 
 .max-content-width,
@@ -96,11 +97,6 @@ h4 {
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
-
-header {
-    background-color: #d4dee6;
-}
-
 header .heading {
     color: #281e1a;
     font-size: 2rem;
@@ -147,6 +143,11 @@ Content styles (Main Module)
 
 
 /* *****styles for quiz section***** */
+
+#quiz-container {
+    background-color: white;
+}
+
 .quiz,
 .results-section {
     padding: 15px;
@@ -254,8 +255,7 @@ Footer styles (Main Module)
 */
 
 footer {
-    background-color: #d4dee6;
-    padding: 1rem;
+    padding: 5rem;
 }
 
 footer p,
@@ -426,7 +426,7 @@ place all the mobile tables styles bellow this line
     footer p,
     footer a
     footer a:hover {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
